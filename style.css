@@ -2,12 +2,11 @@ body {
   display: flex;
   margin: 0;
   min-height: 100%;
-  height: 100%; 
-}
+  height: 100%; }
 
 button {
   display: block;
-  background-color: #E0D5F2;
+  background-color: #2E7BCC;
   cursor: pointer;
   padding: 5px;
   border: 0;
@@ -15,14 +14,14 @@ button {
 
 div#bracket {
   margin-left: 450px;
-  background-color: #E0D5F2;
+  background-color: lightgrey;
   padding: 25px;
   display: inline-block;
   width: 100%;
   overflow-y: auto; }
   div#bracket h2 {
     display: block;
-    color: white;
+    color: grey;
     text-align: center;
     vertical-align: middle; }
 
@@ -61,75 +60,37 @@ div.round1, div.round2, div.round3, div.round4, div.round5 {
 
 div.round1 div.match {
   padding: 10px 0;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.6px;
-  word-spacing: 2px;
-  color: #000000;
-  border: 2px outset #8E17D2;
   height: 80px; }
 
 div.round1 div.spacer {
   height: 28px; }
 
 div.round2 div.match {
-  padding: 20px 0; 
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.6px;
-  word-spacing: 2px;
-  color: #000000;
-  border: 2px outset #8E17D2;
-}
+  padding: 20px 0; }
 
 div.round2 div.spacer {
   height: 98px; }
 
 div.round3 div.match {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.6px;
-  word-spacing: 2px;
-  color: #000000;
-  border: 2px outset #8E17D2;
   padding: 70px 0; }
 
 div.round3 div.spacer {
   height: 198px; }
 
 div.round4 div.match {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.6px;
-  word-spacing: 2px;
-  color: #000000;
-  border: 2px outset #8E17D2;
   padding: 170px 0; }
 
 div.round4 div.spacer {
   height: 398px; }
 
 div.round5 div.match {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.6px;
-  word-spacing: 2px;
-  color: #000000;
-  border: 2px outset #8E17D2;
   padding: 370px 0; }
 
 div.round5 div.spacer {
   height: 798px; }
 
 div.match p {
-  margin: 5px; 
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.6px;
-  word-spacing: 2px;
-  color: #000000;
-  border: 2px outset #8E17D2;
-}
+  margin: 5px; }
 
 div.spacer {
   border-top: 1px solid #555;
@@ -137,8 +98,8 @@ div.spacer {
   border-right: 1px solid #555; }
 
 input#numberOfPlayers {
-  color: #E0D5F2;
-  background-color: #8E17D2;
+  color: #fff;
+  background-color: rgba(24, 24, 36, 0.6);
   border-width: 0;
   padding: 2px;
   border-radius: 2px;
@@ -153,7 +114,7 @@ p.warningMessage {
   text-align: center; }
 
 section {
-  background-color: #E0D5F2;
+  background-color: rgba(24, 24, 36, 0.6);
   padding: 2px 10px;
   margin: 10px 0;
   border-radius: 2px; }
@@ -162,16 +123,13 @@ section {
 
 select#winner {
   display: inline-block;
-  height: 30px; 
-  border: 2px outset #E0D5F2;
-}
+  height: 30px; }
 
 textarea#names {
   background-color: rgba(24, 24, 36, 0.6);
   border-width: 0;
   padding: 2px;
   border-radius: 2px;
-  border: 2px outset #8E17D2;
   color: #fff;
   height: 128px;
   min-width: 435px;
