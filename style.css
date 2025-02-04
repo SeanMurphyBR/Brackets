@@ -54,6 +54,7 @@ div#projectInfoFlex {
 div.round1, div.round2, div.round3, div.round4, div.round5 {
   vertical-align: top;
   display: inline-block;
+  border: 2px outset #8E17D2;
   min-width: 10%;
   width: 15%;
   max-width: 20%; }
