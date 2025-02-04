@@ -69,7 +69,7 @@ div.round1 div.match {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #E0D5F2;
+  color: #FFFFFF;
   border: 2px outset #8E17D2;
   height: 80px; }
 
@@ -82,7 +82,7 @@ div.round2 div.match {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #E0D5F2;
+  color: #FFFFFF;
   border: 2px outset #8E17D2;
 }
 
@@ -94,7 +94,7 @@ div.round3 div.match {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #E0D5F2;
+  color: #FFFFFF;
   border: 2px outset #8E17D2;
   padding: 70px 0; }
 
@@ -106,7 +106,7 @@ div.round4 div.match {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #E0D5F2;
+  color: #FFFFFF;
   border: 2px outset #8E17D2;
   padding: 170px 0; }
 
@@ -118,7 +118,7 @@ div.round5 div.match {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #E0D5F2;
+  color: #FFFFFF;
   border: 2px outset #8E17D2;
   padding: 370px 0; }
 
@@ -132,7 +132,7 @@ div.match p {
   letter-spacing: 0.6px;
   word-spacing: 2px;
   color: #FFFFFF;
-  border: 2px outset E0D5F2;
+  border: 2px outset #FFFFFF;
 }
 
 div.spacer {
