@@ -16,8 +16,8 @@ button {
 
 div#bracket {
   margin-left: 450px;
-  border: 2px outset #8E17D2;
-  background-color: #E0D5F2;
+  border: 2px outset #E0D5F2;
+  background-color: #8E17D2;
   padding: 25px;
   display: inline-block;
   width: 100%;
@@ -35,7 +35,7 @@ div#mainBracket, div#secondaryBracket {
 div#options {
   position: fixed;
   background-color: #E0D5F2;
-  color: #8E17D2;
+  color: #E0D5F2;
   padding: 0 10px 10px 10px;
   width: 450px;
   height: 100%;
