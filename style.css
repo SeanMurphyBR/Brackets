@@ -66,24 +66,49 @@ div.round1 div.spacer {
   height: 28px; }
 
 div.round2 div.match {
-  padding: 20px 0; }
+  padding: 20px 0; 
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  word-spacing: 2px;
+  color: #8E17D2;
+  border: 2px outset #8E17D2;
+}
 
 div.round2 div.spacer {
   height: 98px; }
 
 div.round3 div.match {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  word-spacing: 2px;
+  color: #8E17D2;
+  border: 2px outset #8E17D2;
   padding: 70px 0; }
 
 div.round3 div.spacer {
   height: 198px; }
 
 div.round4 div.match {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  word-spacing: 2px;
+  color: #8E17D2;
+  border: 2px outset #8E17D2;
   padding: 170px 0; }
 
 div.round4 div.spacer {
   height: 398px; }
 
 div.round5 div.match {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  word-spacing: 2px;
+  color: #8E17D2;
+  border: 2px outset #8E17D2;
   padding: 370px 0; }
 
 div.round5 div.spacer {
@@ -96,6 +121,7 @@ div.match p {
   letter-spacing: 0.6px;
   word-spacing: 2px;
   color: #8E17D2;
+  border: 2px outset #8E17D2;
 }
 
 div.spacer {
