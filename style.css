@@ -17,7 +17,7 @@ button {
 div#bracket {
   margin-left: 450px;
   border: 2px outset #E0D5F2;
-  background-color: #8E17D2;
+  background-color: #E0D5F2;
   padding: 25px;
   display: inline-block;
   width: 100%;
@@ -141,7 +141,7 @@ div.spacer {
   border-right: 1px solid #555; }
 
 input#numberOfPlayers {
-  color: #8E17D2;
+  color: #E0D5F2;
   background-color: #8E17D2;
   border-width: 0;
   padding: 2px;
@@ -157,7 +157,7 @@ p.warningMessage {
   text-align: center; }
 
 section {
-  background-color: #8E17D2;
+  background-color: #E0D5F2;
   padding: 2px 10px;
   margin: 10px 0;
   border-radius: 2px; }
@@ -167,7 +167,7 @@ section {
 select#winner {
   display: inline-block;
   height: 30px; 
-  border: 2px outset #8E17D2;
+  border: 2px outset #E0D5F2;
 }
 
 textarea#names {
