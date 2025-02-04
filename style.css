@@ -156,13 +156,16 @@ section {
 
 select#winner {
   display: inline-block;
-  height: 30px; }
+  height: 30px; 
+  border: 2px outset #8E17D2;
+}
 
 textarea#names {
   background-color: rgba(24, 24, 36, 0.6);
   border-width: 0;
   padding: 2px;
   border-radius: 2px;
+  border: 2px outset #8E17D2;
   color: #fff;
   height: 128px;
   min-width: 435px;
