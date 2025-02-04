@@ -131,14 +131,14 @@ div.match p {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #E0D5F2;
+  color: #FFFFFF;
   border: 2px outset E0D5F2;
 }
 
 div.spacer {
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
-  border-right: 1px solid #FFF; }
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  border-right: 1px solid #555; }
 
 input#numberOfPlayers {
   color: #E0D5F2;
