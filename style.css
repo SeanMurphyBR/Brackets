@@ -60,7 +60,10 @@ div.round1, div.round2, div.round3, div.round4, div.round5 {
 
 div.round1 div.match {
   padding: 10px 0;
-  height: 80px; }
+  height: 80px; 
+  color: #8032E3;
+  border: 2px outset #8032E3;
+}
 
 div.round1 div.spacer {
   height: 28px; }
