@@ -31,8 +31,8 @@ div#mainBracket, div#secondaryBracket {
 
 div#options {
   position: fixed;
-  background-color: #E0D5F2;
-  color: #000000;
+  background-color: #2e404e;
+  color: #fff;
   padding: 0 10px 10px 10px;
   width: 450px;
   height: 100%;
