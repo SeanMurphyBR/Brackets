@@ -90,7 +90,10 @@ div.round5 div.spacer {
   height: 798px; }
 
 div.match p {
-  margin: 5px; }
+  margin: 5px; 
+  color: #8032E3;
+  border: 2px outset #8032E3;
+}
 
 div.spacer {
   border-top: 1px solid #555;
