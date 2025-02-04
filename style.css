@@ -17,7 +17,7 @@ button {
 div#bracket {
   margin-left: 450px;
   border: 2px outset #8E17D2;
-  background-color: #8E17D2;;
+  background-color: #E0D5F2;
   padding: 25px;
   display: inline-block;
   width: 100%;
@@ -26,7 +26,7 @@ div#bracket {
     display: block;
     color: white;
     text-align: center;
-    border: 2px outset #8E17D2;
+    border: 2px outset #E0D5F2;
     vertical-align: middle; }
 
 div#mainBracket, div#secondaryBracket {
@@ -34,7 +34,7 @@ div#mainBracket, div#secondaryBracket {
 
 div#options {
   position: fixed;
-  background-color: #8E17D2;
+  background-color: #E0D5F2;
   color: #8E17D2;
   padding: 0 10px 10px 10px;
   width: 450px;
@@ -65,6 +65,12 @@ div.round1, div.round2, div.round3, div.round4, div.round5 {
 
 div.round1 div.match {
   padding: 10px 0;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  word-spacing: 2px;
+  color: #E0D5F2;
+  border: 2px outset #8E17D2;
   height: 80px; }
 
 div.round1 div.spacer {
@@ -76,7 +82,7 @@ div.round2 div.match {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #8E17D2;
+  color: #E0D5F2;
   border: 2px outset #8E17D2;
 }
 
@@ -88,7 +94,7 @@ div.round3 div.match {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #8E17D2;
+  color: #E0D5F2;
   border: 2px outset #8E17D2;
   padding: 70px 0; }
 
@@ -100,7 +106,7 @@ div.round4 div.match {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #8E17D2;
+  color: #E0D5F2;
   border: 2px outset #8E17D2;
   padding: 170px 0; }
 
@@ -112,7 +118,7 @@ div.round5 div.match {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #8E17D2;
+  color: #E0D5F2;
   border: 2px outset #8E17D2;
   padding: 370px 0; }
 
@@ -125,7 +131,7 @@ div.match p {
   font-size: 12px;
   letter-spacing: 0.6px;
   word-spacing: 2px;
-  color: #8E17D2;
+  color: #E0D5F2;
   border: 2px outset #8E17D2;
 }
 
