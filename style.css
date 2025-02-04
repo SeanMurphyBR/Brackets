@@ -34,8 +34,8 @@ div#mainBracket, div#secondaryBracket {
 
 div#options {
   position: fixed;
-  background-color: #2e404e;
-  color: #fff;
+  background-color: #8E17D2;
+  color: #8E17D2;
   padding: 0 10px 10px 10px;
   width: 450px;
   height: 100%;
@@ -151,7 +151,7 @@ p.warningMessage {
   text-align: center; }
 
 section {
-  background-color: rgba(24, 24, 36, 0.6);
+  background-color: #8E17D2;
   padding: 2px 10px;
   margin: 10px 0;
   border-radius: 2px; }
