@@ -64,6 +64,20 @@ function createSelection(inputArray) {
   return selectionItem;
 }
 
+function updateBracket() {
+  const selectElements = document.querySelectorAll('select');
+  
+  for (let z = 0; i < selectElements.length; i++) {
+    const select = selectElements[i];
+    selectElements[i].remove() ;
+    console.log(select.value); // Get the selected value of each select element
+    var matchItem = document.createElement("div")
+        player = document.createElement("p")
+
+    player.appendChild(document.createTextNode(matchArray[i]));
+  }
+}
+
 function generateBracket() {
   // Get number of players from input box
   var optionSection = document.getElementById("options")
