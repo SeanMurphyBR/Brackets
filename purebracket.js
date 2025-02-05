@@ -70,15 +70,19 @@ function updateBracket() {
   for (let z = 0; i < selectElements.length; i++) {
     const select = selectElements[i];
     // Create a new element with the desired type
-    const newElement = document.createElement("p");
-    newElement.appendChild(document.createTextNode(select.value));
-    // Copy attributes from the old element
-    for (const attr of select.attributes) {
-      newElement.setAttribute(attr.name, attr.value);
-    }
+    
+    if (select.value!="") {
+      const newElement = document.createElement("p");
+      newElement.appendChild(document.createTextNode(select.value));
+      // Copy attributes from the old element
+      for (const attr of select.attributes) {
+        newElement.setAttribute(attr.name, attr.value);
+      }
 
-    // Replace the old element with the new one
-    select.parentNode.replaceChild(newElement, select);
+      // Replace the old element with the new one
+      select.parentNode.replaceChild(newElement, select);
+
+    }
   }
 }
 
