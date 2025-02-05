@@ -79,6 +79,7 @@ function updateBracket() {
         newElement.setAttribute(attr.name, attr.value);
       }
 
+      newElement.appendChild(select.firstChild);
       // Replace the old element with the new one
       select.parentNode.replaceChild(newElement, select);
 
