@@ -67,7 +67,7 @@ function createSelection(inputArray) {
 function updateBracket() {
   const selectElements = document.querySelectorAll('select');
   
-  for (let z = 0; i < selectElements.length; i++) {
+  for (let i = 0; i < selectElements.length; i++) {
     const select = selectElements[i];
     // Create a new element with the desired type
     
