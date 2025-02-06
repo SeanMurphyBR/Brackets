@@ -7,11 +7,12 @@ function bracketLoad(){
   //testing
   if (loadBracket) {
     bracketHolder.outerHTML = loadBracket;
-    localStorage.clear();
-    localStorage.setItem("bracketSave", bracketHolder.outerHTML);
+    updateBracket();
+    //localStorage.clear();
+    //localStorage.setItem("bracketSave", bracketHolder.outerHTML);
     console.log("Replaced bracket");
   }
-  console.log("Loaded bracket");
+  console.log("Load bracket function done");
 }
 
 
