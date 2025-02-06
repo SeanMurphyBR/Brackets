@@ -1,3 +1,4 @@
+/*
 function bracketLoad(){
   const bracketHolder = document.getElementById("bracket");
   //const obj = bracketHolder;
@@ -11,7 +12,8 @@ function bracketLoad(){
   localStorage.clear();
   localStorage.setItem("bracketSave", bracketHolder); 
 }
-  
+*/
+
 function shuffleArray(inputArray) {
   /* This is a script that I found on Stack Overflow, they call it the
    * 'Fisher-Yates shuffle', which seems pretty cool. And it works too!
