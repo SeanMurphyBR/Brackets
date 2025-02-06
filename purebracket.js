@@ -6,12 +6,12 @@ function bracketLoad(){
   const loadBracket = localStorage.getItem("bracketSave"); 
   //testing
   if (loadBracket) {
-    bracketHolder.outerhtml = loadBracket;
+    bracketHolder.innerhtml = loadBracket;
     console.log("Replaced bracket");
   }
   
   localStorage.clear();
-  localStorage.setItem("bracketSave", bracketHolder.outerhtml);
+  localStorage.setItem("bracketSave", bracketHolder.innerhtml);
   
   console.log("Loaded bracket");
 }
@@ -153,7 +153,8 @@ function updateBracket() {
   }
   localStorage.clear();
   var bracketBox = document.getElementById("bracket");
-  localStorage.setItem('bracketSave', bracketBox); 
+  localStorage.setItem("bracketSave", bracketBox.innerhtml);
+  console.log("Saved bracket after update.")
 }
 
 function generateBracket() {
@@ -339,7 +340,8 @@ function generateBracket() {
     secondaryBracket.appendChild(winnerSelect);
   }
   localStorage.clear();
-  localStorage.setItem("bracketSave", bracketBox.outerHTML); 
+  localStorage.setItem("bracketSave", bracketBox.innerhtml);
+  console.log("Saved bracket after generation.")
 }
 
 
