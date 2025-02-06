@@ -1,21 +1,3 @@
-function bracketLoad(){
-  
-  const bracketHolder = document.getElementById("bracket");
-  //const obj = bracketHolder;
-  //localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
-  const loadBracket = localStorage.getItem("bracketSave"); 
-  //testing
-  if (loadBracket) {
-    bracketHolder.outerHTML = loadBracket;
-    updateBracket();
-    //localStorage.clear();
-    //localStorage.setItem("bracketSave", bracketHolder.outerHTML);
-    console.log("Replaced bracket");
-  }
-  console.log("Load bracket function done");
-}
-
-
 function shuffleArray(inputArray) {
   /* This is a script that I found on Stack Overflow, they call it the
    * 'Fisher-Yates shuffle', which seems pretty cool. And it works too!
@@ -341,6 +323,23 @@ function generateBracket() {
   localStorage.clear();
   localStorage.setItem("bracketSave", bracketBox.outerHTML);
   console.log("Saved bracket after generation.")
+}
+
+function bracketLoad(){
+  
+  const bracketHolder = document.getElementById("bracket");
+  //const obj = bracketHolder;
+  //localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
+  const loadBracket = localStorage.getItem("bracketSave"); 
+  //testing
+  if (loadBracket) {
+    bracketHolder.outerHTML = loadBracket;
+    updateBracket();
+    //localStorage.clear();
+    //localStorage.setItem("bracketSave", bracketHolder.outerHTML);
+    console.log("Replaced bracket");
+  }
+  console.log("Load bracket function done");
 }
 
 
