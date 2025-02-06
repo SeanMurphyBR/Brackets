@@ -93,12 +93,12 @@ function updateBracket() {
           matchItem.className = "match";
           spacer.className = "spacer";
 
-          matchItem.appendChild(player1);
+          matchItem.appendChild(winnerPlayer);
           matchItem.appendChild(spacer);
 
           roundWin.appendChild(matchItem);
           //select.parentNode.replaceChild(newElement, select);
-          select.remove();
+          //select.remove();
           mainBracket.appendChild(roundWin);
       }
         
