@@ -80,10 +80,7 @@ function updateBracket() {
       }
       
       if (newElement.getAttribute("id") == "winner") {
-        select.remove();
-        var marginSize = (((playerNumber / 2) * 100) - 30) / 2;
-        newElement.style.margin = marginSize + "px 0";
-        mainBracket.appendChild(newElement);
+        select.parentNode.replaceChild(newElement, select);
       }
       else {
         newElement.appendChild(select.firstChild);
