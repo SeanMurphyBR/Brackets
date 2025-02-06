@@ -102,7 +102,30 @@ function updateBracket() {
           //mainBracket.appendChild(roundWin);
           select.replaceWith(roundWin);
       }
-        
+      else if (newElement.getAttribute("id") == "secondWinner") {
+        var consWin = document.createElement("div");
+
+        consWin.className = "roundWin";
+        // Add the names of the winner
+          var matchItem = document.createElement("div")
+          winnerPlayer2 = document.createElement("p")
+          spacer = document.createElement("div");
+
+          winnerPlayer2.appendChild(document.createTextNode("Consolation Champion: " + select.value));
+
+          matchItem.className = "match";
+          spacer.className = "spacer";
+
+          matchItem.appendChild(winnerPlayer2);
+          matchItem.appendChild(spacer);
+
+          consWin.appendChild(matchItem);
+          //select.parentNode.replaceChild(roundWin, select);
+          //select.remove();
+          //mainBracket.appendChild(roundWin);
+          select.replaceWith(consWin);
+      }
+      
       else {
         newElement.appendChild(select.firstChild);
         // Replace the old element with the new one
