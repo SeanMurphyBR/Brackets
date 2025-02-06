@@ -1,5 +1,5 @@
 function bracketLoad(){
-  /*
+  
   const bracketHolder = document.getElementById("bracket");
   //const obj = bracketHolder;
   //localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
@@ -7,12 +7,13 @@ function bracketLoad(){
   //testing
   if (loadBracket) {
     bracketHolder.replaceWith(loadBracket);
+    console.log("Replaced bracket");
   }
   
   localStorage.clear();
-  localStorage.setItem("bracketSave", bracketHolder); 
-  */
-  console.log("Hallo!");
+  localStorage.setItem("bracketSave", bracketHolder.outerhtml);
+  
+  console.log("Loaded bracket");
 }
 
 
