@@ -1,9 +1,9 @@
 function bracketLoad(){
-  var bracketHolder = document.getElementById("bracket");
+  const bracketHolder = document.getElementById("bracket");
   //const obj = bracketHolder;
   //localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
-  var loadBracket = JSON.parse(localStorage.getItem("bracketSave")); 
-  if (loadBracket) {
+  const loadBracket = JSON.parse(localStorage.getItem("bracketSave")); 
+  if (loadBracket.firstElementChild) {
     bracketHolder.replaceWith(loadBracket);
   }
 }
@@ -143,9 +143,8 @@ function updateBracket() {
       }
     }
   }
-  var bracketHolder = document.getElementById("bracket");
-  //const obj = bracketHolder;
-  localStorage.setItem('bracketSave', JSON.stringify(bracketHolder)); 
+  
+  localStorage.setItem('bracketSave', JSON.stringify(document.getElementById("bracket"))); 
 }
 
 function generateBracket() {
@@ -330,9 +329,7 @@ function generateBracket() {
     winnerSelect.style.margin = marginSize + "px 0";
     secondaryBracket.appendChild(winnerSelect);
   }
-  var bracketHolder = document.getElementById("bracket");
-  //const obj = bracketHolder;
-  localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
+  localStorage.setItem("bracketSave", JSON.stringify(document.getElementById("bracket"))); 
 }
 
 
