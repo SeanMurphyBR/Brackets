@@ -1,9 +1,9 @@
 function bracketLoad(){
   var bracketHolder = document.getElementById("bracket");
   //const obj = bracketHolder;
-  //localStorage.setItem('bracketSave', JSON.stringify(bracketHolder)); 
-  var loadBracket = JSON.parse(localStorage.getItem('bracketSave')); 
-  if (bracketHolder != loadBracket) {
+  //localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
+  var loadBracket = JSON.parse(localStorage.getItem("bracketSave")); 
+  if (loadBracket) {
     bracketHolder.replaceWith(loadBracket);
   }
 }
@@ -332,5 +332,38 @@ function generateBracket() {
   }
   var bracketHolder = document.getElementById("bracket");
   //const obj = bracketHolder;
-  localStorage.setItem('bracketSave', JSON.stringify(bracketHolder)); 
+  localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
 }
+
+
+
+/*
+// Function to save data to localStorage
+function saveData() {
+  const dataToSave = {
+    // Replace with the actual data you want to save
+    exampleData: "This is some data to save",
+  };
+
+  localStorage.setItem("siteData", JSON.stringify(dataToSave));
+}
+
+// Function to load data from localStorage
+function loadData() {
+  const savedData = localStorage.getItem("siteData");
+  if (savedData) {
+    // Replace with how you want to use the loaded data
+    console.log("Loaded data:", JSON.parse(savedData));
+  }
+}
+
+// Save data before the page is unloaded
+window.addEventListener("beforeunload", saveData);
+
+// Load data when the page loads
+window.addEventListener("load", loadData);
+
+
+
+*/
+
