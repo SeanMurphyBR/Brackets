@@ -2,7 +2,7 @@ function bracketLoad(){
   const bracketHolder = document.getElementById("bracket");
   //const obj = bracketHolder;
   //localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
-  const loadBracket = JSON.parse(localStorage.getItem("bracketSave")); 
+  const loadBracket = localStorage.getItem("bracketSave"); 
   if (loadBracket) {
     bracketHolder.replaceWith(loadBracket);
   }
