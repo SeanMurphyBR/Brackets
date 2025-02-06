@@ -3,6 +3,7 @@ function bracketLoad(){
   //const obj = bracketHolder;
   //localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
   const loadBracket = localStorage.getItem("bracketSave"); 
+  //testing
   if (loadBracket) {
     bracketHolder.replaceWith(loadBracket);
   }
