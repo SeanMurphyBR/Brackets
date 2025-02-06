@@ -78,11 +78,18 @@ function updateBracket() {
       for (const attr of select.attributes) {
         newElement.setAttribute(attr.name, attr.value);
       }
-
-      newElement.appendChild(select.firstChild);
-      // Replace the old element with the new one
-      select.parentNode.replaceChild(newElement, select);
-
+      
+      if (newElement.getAttribute("id") == "winner") {
+        select.remove();
+        var marginSize = (((playerNumber / 2) * 100) - 30) / 2;
+        newElement.style.margin = marginSize + "px 0";
+        mainBracket.appendChild(newElement);
+      }
+      else {
+        newElement.appendChild(select.firstChild);
+        // Replace the old element with the new one
+        select.parentNode.replaceChild(newElement, select);
+      }
     }
   }
 }
