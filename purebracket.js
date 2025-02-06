@@ -2,11 +2,8 @@ function bracketLoad(){
   var bracketHolder = document.getElementById("bracket");
   //const obj = bracketHolder;
   //localStorage.setItem('bracketSave', JSON.stringify(bracketHolder)); 
-  if (bracketHolder.firstchild.tagName === 'H2') {
-    console.log('This is an H1 heading');
-  }
-  else {
-    loadBracket = JSON.parse(localStorage.getItem('bracketSave')); 
+  var loadBracket = JSON.parse(localStorage.getItem('bracketSave')); 
+  if (bracketHolder != loadBracket) {
     bracketHolder.replaceWith(loadBracket);
   }
 }
