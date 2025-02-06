@@ -1,5 +1,5 @@
-/*
 function bracketLoad(){
+  /*
   const bracketHolder = document.getElementById("bracket");
   //const obj = bracketHolder;
   //localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
@@ -11,8 +11,10 @@ function bracketLoad(){
   
   localStorage.clear();
   localStorage.setItem("bracketSave", bracketHolder); 
+  */
+  console.log("Hallo!");
 }
-*/
+
 
 function shuffleArray(inputArray) {
   /* This is a script that I found on Stack Overflow, they call it the
