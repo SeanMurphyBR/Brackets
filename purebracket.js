@@ -6,6 +6,9 @@ function bracketLoad(){
   if (loadBracket.firstElementChild) {
     bracketHolder.replaceWith(loadBracket);
   }
+  
+  localStorage.clear();
+  localStorage.setItem("bracketSave", JSON.stringify(document.getElementById("bracket"))); 
 }
   
 function shuffleArray(inputArray) {
@@ -143,7 +146,7 @@ function updateBracket() {
       }
     }
   }
-  
+  localStorage.clear();
   localStorage.setItem('bracketSave', JSON.stringify(document.getElementById("bracket"))); 
 }
 
@@ -329,6 +332,7 @@ function generateBracket() {
     winnerSelect.style.margin = marginSize + "px 0";
     secondaryBracket.appendChild(winnerSelect);
   }
+  localStorage.clear();
   localStorage.setItem("bracketSave", JSON.stringify(document.getElementById("bracket"))); 
 }
 
