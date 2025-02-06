@@ -103,20 +103,15 @@ function updateBracket() {
         // Add the names of the winner
           var matchItem = document.createElement("div")
           winnerPlayer = document.createElement("p")
-          spacer = document.createElement("div");
 
           winnerPlayer.appendChild(document.createTextNode("Champion: " + select.value));
 
           matchItem.className = "match";
-          spacer.className = "spacer";
 
           matchItem.appendChild(winnerPlayer);
-          matchItem.appendChild(spacer);
 
           roundWin.appendChild(matchItem);
-          var marginSize = (((playerNumber / 2) * 100) - 30) / 2;
 
-          roundWin.style.margin = marginSize + "px 0";
           //select.parentNode.replaceChild(roundWin, select);
           //select.remove();
           //mainBracket.appendChild(roundWin);
@@ -129,20 +124,14 @@ function updateBracket() {
         // Add the names of the winner
           var matchItem = document.createElement("div")
           winnerPlayer2 = document.createElement("p")
-          spacer = document.createElement("div");
 
           winnerPlayer2.appendChild(document.createTextNode("Consolation Champion: " + select.value));
 
           matchItem.className = "match";
-          spacer.className = "spacer";
 
           matchItem.appendChild(winnerPlayer2);
-          matchItem.appendChild(spacer);
 
           consWin.appendChild(matchItem);
-          var marginSize = (((playerNumber / 2) * 100) - 30) / 2;
-          consWin.style.margin = marginSize + "px 0";
-        
           //select.parentNode.replaceChild(roundWin, select);
           //select.remove();
           //mainBracket.appendChild(roundWin);
