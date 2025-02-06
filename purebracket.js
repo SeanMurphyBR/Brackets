@@ -105,7 +105,7 @@ function updateBracket() {
       else if (newElement.getAttribute("id") == "secondWinner") {
         var consWin = document.createElement("div");
 
-        consWin.className = "roundWin";
+        consWin.className = "consWin";
         // Add the names of the winner
           var matchItem = document.createElement("div")
           winnerPlayer2 = document.createElement("p")
