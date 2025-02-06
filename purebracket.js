@@ -3,12 +3,12 @@ function bracketLoad(){
   //const obj = bracketHolder;
   //localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
   const loadBracket = JSON.parse(localStorage.getItem("bracketSave")); 
-  if (loadBracket.firstElementChild) {
+  if (loadBracket) {
     bracketHolder.replaceWith(loadBracket);
   }
   
   localStorage.clear();
-  localStorage.setItem("bracketSave", JSON.stringify(document.getElementById("bracket"))); 
+  localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
 }
   
 function shuffleArray(inputArray) {
@@ -147,7 +147,8 @@ function updateBracket() {
     }
   }
   localStorage.clear();
-  localStorage.setItem('bracketSave', JSON.stringify(document.getElementById("bracket"))); 
+  var bracketBox = document.getElementById("bracket");
+  localStorage.setItem('bracketSave', JSON.stringify(bracketBox)); 
 }
 
 function generateBracket() {
@@ -333,7 +334,7 @@ function generateBracket() {
     secondaryBracket.appendChild(winnerSelect);
   }
   localStorage.clear();
-  localStorage.setItem("bracketSave", JSON.stringify(document.getElementById("bracket"))); 
+  localStorage.setItem("bracketSave", JSON.stringify(bracketBox)); 
 }
 
 
