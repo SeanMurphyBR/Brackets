@@ -88,7 +88,7 @@ function updateBracket() {
           winnerPlayer = document.createElement("p")
           spacer = document.createElement("div");
 
-          winnerPlayer.appendChild(document.createTextNode(select.value));
+          winnerPlayer.appendChild(document.createTextNode("Champion: " + select.value));
 
           matchItem.className = "match";
           spacer.className = "spacer";
@@ -97,9 +97,10 @@ function updateBracket() {
           matchItem.appendChild(spacer);
 
           roundWin.appendChild(matchItem);
-          //select.parentNode.replaceChild(newElement, select);
+          //select.parentNode.replaceChild(roundWin, select);
           //select.remove();
-          mainBracket.appendChild(roundWin);
+          //mainBracket.appendChild(roundWin);
+          select.replaceWith(roundWin);
       }
         
       else {
