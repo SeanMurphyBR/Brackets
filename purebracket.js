@@ -80,8 +80,28 @@ function updateBracket() {
       }
       
       if (newElement.getAttribute("id") == "winner") {
-        select.parentNode.replaceChild(newElement, select);
+        var roundWin = document.createElement("div");
+
+        roundWin.className = "roundWin";
+        // Add the names of the winner
+          var matchItem = document.createElement("div")
+          winnerPlayer = document.createElement("p")
+          spacer = document.createElement("div");
+
+          winnerPlayer.appendChild(document.createTextNode(select.value));
+
+          matchItem.className = "match";
+          spacer.className = "spacer";
+
+          matchItem.appendChild(player1);
+          matchItem.appendChild(spacer);
+
+          roundWin.appendChild(matchItem);
+          //select.parentNode.replaceChild(newElement, select);
+          select.remove();
+          mainBracket.appendChild(roundWin);
       }
+        
       else {
         newElement.appendChild(select.firstChild);
         // Replace the old element with the new one
