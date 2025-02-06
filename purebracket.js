@@ -8,7 +8,7 @@ function bracketLoad(){
   }
   
   localStorage.clear();
-  localStorage.setItem("bracketSave", JSON.stringify(bracketHolder)); 
+  localStorage.setItem("bracketSave", bracketHolder); 
 }
   
 function shuffleArray(inputArray) {
@@ -148,7 +148,7 @@ function updateBracket() {
   }
   localStorage.clear();
   var bracketBox = document.getElementById("bracket");
-  localStorage.setItem('bracketSave', JSON.stringify(bracketBox)); 
+  localStorage.setItem('bracketSave', bracketBox); 
 }
 
 function generateBracket() {
@@ -334,7 +334,7 @@ function generateBracket() {
     secondaryBracket.appendChild(winnerSelect);
   }
   localStorage.clear();
-  localStorage.setItem("bracketSave", JSON.stringify(bracketBox)); 
+  localStorage.setItem("bracketSave", bracketBox); 
 }
 
 
