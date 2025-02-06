@@ -79,6 +79,10 @@ function createSelection(inputArray) {
 
 function updateBracket() {
   const selectElements = document.querySelectorAll('select');
+  var optionSection = document.getElementById("options")
+      numberInput = document.getElementById("numberOfPlayers")
+      playerNumber = parseInt(numberInput.value)
+
   
   for (let i = (selectElements.length - 1); i >= 0; i--) {
     const select = selectElements[i];
@@ -110,6 +114,9 @@ function updateBracket() {
           matchItem.appendChild(spacer);
 
           roundWin.appendChild(matchItem);
+          var marginSize = (((playerNumber / 2) * 100) - 30) / 2;
+
+          roundWin.style.margin = marginSize + "px 0";
           //select.parentNode.replaceChild(roundWin, select);
           //select.remove();
           //mainBracket.appendChild(roundWin);
@@ -133,6 +140,9 @@ function updateBracket() {
           matchItem.appendChild(spacer);
 
           consWin.appendChild(matchItem);
+          var marginSize = (((playerNumber / 2) * 100) - 30) / 2;
+          consWin.style.margin = marginSize + "px 0";
+        
           //select.parentNode.replaceChild(roundWin, select);
           //select.remove();
           //mainBracket.appendChild(roundWin);
