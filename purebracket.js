@@ -6,7 +6,7 @@ function bracketLoad(){
   const loadBracket = localStorage.getItem("bracketSave"); 
   //testing
   if (loadBracket) {
-    bracketHolder.replaceWith(loadBracket);
+    bracketHolder.outerhtml = loadBracket;
     console.log("Replaced bracket");
   }
   
