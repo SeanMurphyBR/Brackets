@@ -338,7 +338,7 @@ function generateBracket() {
     secondaryBracket.appendChild(winnerSelect);
   }
   localStorage.clear();
-  localStorage.setItem("bracketSave", bracketBox); 
+  localStorage.setItem("bracketSave", bracketBox.outerHTML); 
 }
 
 
