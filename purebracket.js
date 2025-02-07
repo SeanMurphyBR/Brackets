@@ -225,7 +225,7 @@ function generateBracket() {
   round1.className = "Round 1";
 
   var round1Title = document.createElement("p");
-  //roundTitle.className = "roundTitle";
+  roundTitle.className = "roundTitle";
   round1Title.appendChild(document.createTextNode(round1.className));
   round1.appendChild(round1Title);
   
@@ -260,7 +260,7 @@ function generateBracket() {
     roundItem.className = "Round " + (i + 1);
     
     var roundTitle = document.createElement("p");
-    //roundTitle.className = "roundTitle";
+    roundTitle.className = "roundTitle";
     roundTitle.appendChild(document.createTextNode(roundItem.className));
     roundItem.appendChild(roundTitle);
     
@@ -299,7 +299,12 @@ function generateBracket() {
       var roundItem = document.createElement("div")
           splits = Math.pow(2, i);
 
-      roundItem.className = "round round" + i;
+      roundItem.className = "Consolation Round" + i;
+
+      var round1Title = document.createElement("p");
+      roundTitle.className = "roundTitle";
+      roundTitle.appendChild(document.createTextNode(round.className));
+      round1.appendChild(roundTitle);
 
       for (var j = 0; j < playerNumber / splits; j += 2) {
         var matchItem = document.createElement("div")
