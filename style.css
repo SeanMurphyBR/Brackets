@@ -91,6 +91,12 @@ div.round5 div.match {
 div.round5 div.spacer {
   height: 798px; }
 
+div.roundTitle p {
+  margin: 5px; 
+  color: #8032E3;
+  text-shadow: 2px 2px 6px #8032E3;
+}
+
 div.match p {
   margin: 5px; 
   color: #8032E3;
