@@ -222,7 +222,7 @@ function generateBracket() {
   // Create a 'round' div for the first round where all players are
   // included
   var round1 = document.createElement("div");
-  round1.className = "Round 1";
+  round1.className = "round 1";
 
   //var round1Title = document.createElement("p");
   //roundTitle.className = "roundTitle";
@@ -257,7 +257,7 @@ function generateBracket() {
     var roundItem = document.createElement("div")
         splits = Math.pow(2, i);
 
-    roundItem.className = "Round " + (i + 1);
+    roundItem.className = "round " + (i + 1);
     
     //var roundTitle = document.createElement("p");
     //roundTitle.className = "roundTitle";
@@ -299,7 +299,7 @@ function generateBracket() {
       var roundItem = document.createElement("div")
           splits = Math.pow(2, i);
 
-      roundItem.className = "Consolation Round" + i;
+      roundItem.className = "round round" + i;
 
       //var round1Title = document.createElement("p");
       //roundTitle.className = "roundTitle";
