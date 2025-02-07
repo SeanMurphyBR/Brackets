@@ -222,8 +222,13 @@ function generateBracket() {
   // Create a 'round' div for the first round where all players are
   // included
   var round1 = document.createElement("div");
+  round1.className = "Round 1";
 
-  round1.className = "round1";
+  var round1Title = document.createElement("div");
+  //roundTitle.className = "roundTitle";
+  round1Title.appendChild(document.createTextNode(round1.classname));
+  round1.appendChild(round1Title);
+  
   // Add the names of all the players to the first round
   for (var i = 0; i < matchArray.length; i += 2) {
     var matchItem = document.createElement("div")
@@ -252,8 +257,13 @@ function generateBracket() {
     var roundItem = document.createElement("div")
         splits = Math.pow(2, i);
 
-    roundItem.className = "round" + (i + 1);
-
+    roundItem.className = "Round " + (i + 1);
+    
+    var roundTitle = document.createElement("div");
+    //roundTitle.className = "roundTitle";
+    roundTitle.appendChild(document.createTextNode(roundItem.classname));
+    roundItem.appendChild(roundTitle);
+    
     for (j = 0; j < playerNumber / splits; j += 2) {
       var matchItem = document.createElement("div")
           spacer = document.createElement("div")
