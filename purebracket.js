@@ -224,10 +224,10 @@ function generateBracket() {
   var round1 = document.createElement("div");
   round1.className = "Round 1";
 
-  var round1Title = document.createElement("p");
+  //var round1Title = document.createElement("p");
   //roundTitle.className = "roundTitle";
-  round1Title.appendChild(document.createTextNode(round1.className));
-  round1.appendChild(round1Title);
+  //round1Title.appendChild(document.createTextNode(round1.className));
+  //round1.appendChild(round1Title);
   
   // Add the names of all the players to the first round
   for (var i = 0; i < matchArray.length; i += 2) {
@@ -259,10 +259,10 @@ function generateBracket() {
 
     roundItem.className = "Round " + (i + 1);
     
-    var roundTitle = document.createElement("p");
+    //var roundTitle = document.createElement("p");
     //roundTitle.className = "roundTitle";
-    roundTitle.appendChild(document.createTextNode(roundItem.className));
-    roundItem.appendChild(roundTitle);
+    //roundTitle.appendChild(document.createTextNode(roundItem.className));
+    //roundItem.appendChild(roundTitle);
     
     for (j = 0; j < playerNumber / splits; j += 2) {
       var matchItem = document.createElement("div")
@@ -301,10 +301,10 @@ function generateBracket() {
 
       roundItem.className = "Consolation Round" + i;
 
-      var round1Title = document.createElement("p");
+      //var round1Title = document.createElement("p");
       //roundTitle.className = "roundTitle";
-      roundTitle.appendChild(document.createTextNode(round.className));
-      roundItem.appendChild(roundTitle);
+      //roundTitle.appendChild(document.createTextNode(round.className));
+      //roundItem.appendChild(roundTitle);
 
       for (var j = 0; j < playerNumber / splits; j += 2) {
         var matchItem = document.createElement("div")
