@@ -304,7 +304,7 @@ function generateBracket() {
       var round1Title = document.createElement("p");
       roundTitle.className = "roundTitle";
       roundTitle.appendChild(document.createTextNode(round.className));
-      round1.appendChild(roundTitle);
+      roundItem.appendChild(roundTitle);
 
       for (var j = 0; j < playerNumber / splits; j += 2) {
         var matchItem = document.createElement("div")
