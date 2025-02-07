@@ -226,7 +226,7 @@ function generateBracket() {
 
   var round1Title = document.createElement("p");
   //roundTitle.className = "roundTitle";
-  round1Title.appendChild(document.createTextNode(round1.classname));
+  round1Title.appendChild(document.createTextNode(round1.className));
   round1.appendChild(round1Title);
   
   // Add the names of all the players to the first round
@@ -261,7 +261,7 @@ function generateBracket() {
     
     var roundTitle = document.createElement("p");
     //roundTitle.className = "roundTitle";
-    roundTitle.appendChild(document.createTextNode(roundItem.classname));
+    roundTitle.appendChild(document.createTextNode(roundItem.className));
     roundItem.appendChild(roundTitle);
     
     for (j = 0; j < playerNumber / splits; j += 2) {
