@@ -224,7 +224,7 @@ function generateBracket() {
   var round1 = document.createElement("div");
   round1.className = "Round 1";
 
-  var round1Title = document.createElement("div");
+  var round1Title = document.createElement("p");
   //roundTitle.className = "roundTitle";
   round1Title.appendChild(document.createTextNode(round1.classname));
   round1.appendChild(round1Title);
@@ -259,7 +259,7 @@ function generateBracket() {
 
     roundItem.className = "Round " + (i + 1);
     
-    var roundTitle = document.createElement("div");
+    var roundTitle = document.createElement("p");
     //roundTitle.className = "roundTitle";
     roundTitle.appendChild(document.createTextNode(roundItem.classname));
     roundItem.appendChild(roundTitle);
