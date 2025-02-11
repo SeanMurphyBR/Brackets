@@ -64,6 +64,15 @@ function createSelection(inputArray) {
   return selectionItem;
 }
 
+function clearBracket(){
+ var bracketBox = document.getElementById("bracket");
+
+  // Clear the bracket div of any existing objects
+  while (bracketBox.firstChild) {
+      bracketBox.removeChild(bracketBox.firstChild);
+  }
+}
+
 function updateBracket() {
   const selectElements = document.querySelectorAll('select');
   var optionSection = document.getElementById("options")
