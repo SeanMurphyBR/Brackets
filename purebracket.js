@@ -71,6 +71,10 @@ function clearBracket(){
   while (bracketBox.firstChild) {
       bracketBox.removeChild(bracketBox.firstChild);
   }
+  const newBracket = document.createElement("h2");
+  const newContent = document.createTextNode("Your bracket will appear here!");
+  newBracket.appendChild(newContent);
+  bracketBox.appendChild(newBracket);
 }
 
 function updateBracket() {
