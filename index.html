@@ -8,6 +8,17 @@
 <body onload="bracketLoad()">
   <div id="options">
     <h1>Create Your Esports Bracket!</h1>
+    <section>
+      <h3>Instructions</h3>
+      <p>Enter the number of players as 4, 8, 16 or 32. Next, enter all of the
+      players names, ensuring that there are as many lines in the textbox as the
+      number provided in step 1. Select your options, and then hit the "generate"
+      button.
+      </p>
+      <p>Now use the selection boxes when a player wins to denote that they are
+      moving forward in the tournament. And don't forget to have fun!
+      </p>
+    </section>
     <h3>Starting a new tournament? Reset your bracket! </h3>
     <button onclick="clearBracket()">Reset</button>
     <h3>Step 1: Enter the number of players</h3>
@@ -29,17 +40,6 @@
     <button onclick="generateBracket()">Generate</button>
     <h3>Step 5: Update the bracket in between rounds!</h3>
     <button onclick="updateBracket()">Update</button>
-    <section>
-      <h3>Instructions</h3>
-      <p>Enter the number of players as 4, 8, 16 or 32. Next, enter all of the
-      players names, ensuring that there are as many lines in the textbox as the
-      number provided in step 1. Select your options, and then hit the "generate"
-      button.
-      </p>
-      <p>Now use the selection boxes when a player wins to denote that they are
-      moving forward in the tournament. And don't forget to have fun!
-      </p>
-    </section>
     <section id="projectInfoSection">
       <h3>Project Info</h3>
       <div id="projectInfoFlex">
